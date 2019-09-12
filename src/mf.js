@@ -15,8 +15,8 @@
  * @returns {number} The result of an arithmetic operation.
  */
 function add () {
-  let a = 21
-  let b = '21'
+  const a = 21
+  const b = '21'
 
   // TODO: Write your code here.
 
@@ -29,9 +29,9 @@ function add () {
  * @returns {string} The string 'I'm going to learn how to program in 9 weeks.'.
  */
 function concat () {
-  let message = `I'm going to learn how to program in`
-  let time = 9
-  let weeks = 'weeks.'
+  const message = 'I\'m going to learn how to program in'
+  const time = 9
+  const weeks = 'weeks.'
 
   // TODO: Write your code here.
 }
@@ -42,8 +42,8 @@ function concat () {
  * @returns {number} The sum of two variables rounded to the nearest integer.
  */
 function round () {
-  let firstNumber = 12.24
-  let secondNumber = 29.27
+  const firstNumber = 12.24
+  const secondNumber = 29.27
 
   // TODO: Write your code here.
 }
@@ -69,7 +69,7 @@ function getOddNumbers (max) {
  * @returns {string} A greeting according to the time of day.
  */
 function greetings () {
-  let hour = new Date().getHours()
+  const hour = new Date().getHours()
 
   // TODO: Write your code here.
 }
@@ -103,11 +103,11 @@ function getNumberSequence () {
   // TODO: Write your code here.
 }
 
-exports.add = add
-exports.concat = concat
-exports.round = round
-exports.getOddNumbers = getOddNumbers
-exports.greetings = greetings
-exports.replaceHyphensFor = replaceHyphensFor
-exports.replaceHyphensWhile = replaceHyphensWhile
-exports.getNumberSequence = getNumberSequence
+module.exports.add = add
+module.exports.concat = concat
+module.exports.round = round
+module.exports.getOddNumbers = getOddNumbers
+module.exports.greetings = greetings
+module.exports.replaceHyphensFor = replaceHyphensFor
+module.exports.replaceHyphensWhile = replaceHyphensWhile
+module.exports.getNumberSequence = getNumberSequence
